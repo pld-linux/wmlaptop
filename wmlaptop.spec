@@ -7,6 +7,7 @@ License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dockapps.org/download.php/id/409/%{name}-%{version}.tar.gz
 # Source0-md5:	b6fb40263b5e512edf297a8b4afd7eb4
+Source1:	%{name}.desktop
 URL:		http://www.dockapps.org/file.php/id/227
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,9 +47,10 @@ potrzebuje u¿ytkownik laptopów:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
 
 install src/wmlaptop $RPM_BUILD_ROOT%{_bindir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,3 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README THANKS
 %attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/DockApplets/*
