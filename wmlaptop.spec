@@ -33,7 +33,7 @@ potrzebuje u¿ytkownik laptopów:
 - Poziom na³adowania baterii (wizualny i procentowy)
 - Automatyczne skalowanie czêstotliwo¶ci pracy procesora
 - Rêczne skalowanie czêstotliwo¶ci pracy procesora
-- 0-100 Wska¼nik obci±¿enia procesora
+- Wska¼nik 0-100 dla obci±¿enia procesora
 - Wsparcie dla sysfs i /proc
 - Pe³na kompatybilno¶æ z j±drami 2.6
 
