@@ -2,7 +2,7 @@ Summary:	Dockapp for laptop users
 Summary(pl):	Aplet dla u¿ytkowników laptopów
 Name:		wmlaptop
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dockapps.org/download.php/id/474/%{name}-%{version}.tar.bz2
@@ -42,7 +42,8 @@ potrzebuje u¿ytkownik laptopów:
 
 %build
 %{__make} \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags}" \
+	LIBDIR="-L/usr/X11R6/%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
