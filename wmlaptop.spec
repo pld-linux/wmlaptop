@@ -2,7 +2,7 @@ Summary:	Dockapp for laptop users
 Summary(pl):	Aplet dla u¿ytkowników laptopów
 Name:		wmlaptop
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://www.dockapps.org/download.php/id/409/%{name}-%{version}.tar.gz
@@ -25,7 +25,6 @@ with a laptop needs:
 - sysfs and /proc filesystems support
 - Kernel 2.6 series fully compatible
 
-
 %description -l pl
 wmlaptop jest apletem dla WindowMakera, który zawiera wszystko czego
 potrzebuje u¿ytkownik laptopów:
@@ -47,10 +46,10 @@ potrzebuje u¿ytkownik laptopów:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/docklets}
 
 install src/wmlaptop $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README THANKS
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/DockApplets/*
+%{_desktopdir}/docklets/*
