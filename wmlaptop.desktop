@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WMLaptop
+Comment=Dockapp for laptop users
+Comment[pl]=Aplet dla użytkowników laptopów
+Exec=wmlaptop
+Terminal=false
+Type=Application
+Encoding=UTF-8
+# vi: encoding=utf-8
