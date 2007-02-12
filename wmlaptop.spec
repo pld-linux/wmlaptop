@@ -1,5 +1,5 @@
 Summary:	Dockapp for laptop users
-Summary(pl):	Aplet dla u¿ytkowników laptopów
+Summary(pl.UTF-8):   Aplet dla uÅ¼ytkownikÃ³w laptopÃ³w
 Name:		wmlaptop
 Version:	1.3
 Release:	2
@@ -25,17 +25,17 @@ with a laptop needs:
 - sysfs and /proc filesystems support
 - Kernel 2.6 series fully compatible
 
-%description -l pl
-wmlaptop jest apletem dla WindowMakera, który zawiera wszystko czego
-potrzebuje u¿ytkownik laptopów:
-- Szacunkowy czas do wyczerpania siê baterii
+%description -l pl.UTF-8
+wmlaptop jest apletem dla WindowMakera, ktÃ³ry zawiera wszystko czego
+potrzebuje uÅ¼ytkownik laptopÃ³w:
+- Szacunkowy czas do wyczerpania siÄ™ baterii
 - Wsparcie dla kilku baterii
-- Poziom na³adowania baterii (wizualny i procentowy)
-- Automatyczne skalowanie czêstotliwo¶ci pracy procesora
-- Rêczne skalowanie czêstotliwo¶ci pracy procesora
-- Wska¼nik 0-100 dla obci±¿enia procesora
+- Poziom naÅ‚adowania baterii (wizualny i procentowy)
+- Automatyczne skalowanie czÄ™stotliwoÅ›ci pracy procesora
+- RÄ™czne skalowanie czÄ™stotliwoÅ›ci pracy procesora
+- WskaÅºnik 0-100 dla obciÄ…Å¼enia procesora
 - Wsparcie dla sysfs i /proc
-- Pe³na kompatybilno¶æ z j±drami 2.6
+- PeÅ‚na kompatybilnoÅ›Ä‡ z jÄ…drami 2.6
 
 %prep
 %setup -q
