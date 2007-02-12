@@ -1,5 +1,5 @@
 Summary:	Dockapp for laptop users
-Summary(pl.UTF-8):   Aplet dla użytkowników laptopów
+Summary(pl.UTF-8):	Aplet dla użytkowników laptopów
 Name:		wmlaptop
 Version:	1.3
 Release:	2
